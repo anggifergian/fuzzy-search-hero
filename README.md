@@ -1,6 +1,6 @@
 # Webpack 4 React Boilerplate
 
-Personal react boilerplate built in with webpack 
+Personal react boilerplate built in with webpack 4
 
 * Ready to start React App :zap:
 * Image loader configured :camera:
@@ -35,11 +35,13 @@ yarn build
 ## Built With
 
 * [webpack](https://webpack.js.org/) - Static module bundler
-* [React](https://babeljs.io/) - JavaScript library for building user interfaces
+* [React](https://reactjs.org/) - JavaScript library for building user interfaces
 * [Babel](https://babeljs.io/) - EcmaScript Transpiler
 * [Yarn](https://yarnpkg.com) - Dependency Management
-* [Jest](https://jestjs.io/) - JavaScript Testing
-* [Enzyme](https://airbnb.io/enzyme/docs/api/) - Component tests for React
+
+That´s it! Remember to change the project information in package.json, README and LICENSE if necessary. :mortar_board:
+
+Give the project a star if you liked it. Happy Hacking! :sunglasses: :star:
 
 ## License
 
