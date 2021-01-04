@@ -23,3 +23,24 @@ cd react-webpack-4
 npm install 
 npm start
 ```
+
+### Production build
+
+You can generate an optimized distribution bundle. To do this run the command:
+
+```CLI
+yarn build
+```
+
+## Built With
+
+* [webpack](https://webpack.js.org/) - Static module bundler
+* [React](https://babeljs.io/) - JavaScript library for building user interfaces
+* [Babel](https://babeljs.io/) - EcmaScript Transpiler
+* [Yarn](https://yarnpkg.com) - Dependency Management
+* [Jest](https://jestjs.io/) - JavaScript Testing
+* [Enzyme](https://airbnb.io/enzyme/docs/api/) - Component tests for React
+
+## License
+
+This project is licensed under the MIT Licensed - see the [LICENSE](LICENSE) file for details
