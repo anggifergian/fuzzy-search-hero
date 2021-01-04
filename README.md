@@ -2,6 +2,11 @@
 
 Personal react boilerplate built in with webpack 
 
+* Ready to start React App :zap:
+* Image loader configured :camera:
+* SASS and CSS loaders configured :art:
+* Production build optimized :chart_with_upwards_trend:
+
 ## 🚀 Quick start
 
 To run this locally:
