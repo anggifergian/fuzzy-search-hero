@@ -2,19 +2,19 @@
 
 Personal react boilerplate built in with webpack 
 
-### Installing
+## 🚀 Quick start
 
-Clone this repo and install dependencies using [yarn](https://yarnpkg.com):
+To run this locally:
+
+1. Clone project `git clone https://github.com/anggifergian/react-webpack-4.git`
+2. Install all dependencies using `yarn install` or `npm install`
+3. Start the development server using `yarn start` or `npm start`
+4. Open up [http://localhost:8080](http://localhost:8080)
+5. Happy Hacking!
 
 ```CLI
-yarn install
-yarn start
-```
-
-Or via [npm](https://www.npmjs.com/):
-
-```CLI
-npm install
+git clone https://github.com/anggifergian/react-webpack-4.git
+cd react-webpack-4
+npm install 
 npm start
 ```
-
