@@ -1,22 +1,65 @@
-import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Profile from "./pages/Profile";
+// Library
+import React, { useState, useEffect } from "react";
+import Fuse from "fuse.js";
+
+// Style
+import "./styles.css";
+
+// Service
+import { getHeroes } from "./services/heroService";
+
+// Component
+import Search from "./components/Search";
+import Hero from "./components/Hero";
 
 const App = () => {
+  const [searchHeroes, setSearchHeroes] = useState();
+
+  // On Component Mount
+  useEffect(() => {
+    getData();
+  }, []);
+
+  // Fetch heroes data
+  const getData = () => {
+    const data = getHeroes();
+    setSearchHeroes(data);
+  };
+
+  const onChange = (query) => {
+    // If input empty, show all heroes
+    if (!query) {
+      getData();
+      return;
+    }
+
+    // If input fill, setup fuse search
+    const fuse = new Fuse(searchHeroes, {
+      keys: ["name", "roles"],
+    });
+    const result = fuse.search(query);
+    const finalResult = [];
+    if (result.length) {
+      result.forEach((hero) => {
+        finalResult.push(hero.item);
+      });
+      setSearchHeroes(finalResult);
+    }
+  };
+
   return (
-    <React.Fragment>
-      <h1>App.js</h1>
-      <Switch>
-        <Route path="/profile" component={Profile} />
-        <Route path="/register" component={Register} />
-        <Route path="/login" component={Login} />
-        <Route path="/home" component={Home} />
-        <Redirect from="/" exact to="/home" />
-      </Switch>
-    </React.Fragment>
+    <div className="container">
+      <div className="row">
+        <div className="title">Mobile Legends</div>
+        <div className="searchc">
+          <Search handleChange={onChange} />
+        </div>
+        <div className="heroesc">
+          {searchHeroes &&
+            searchHeroes.map((hero) => <Hero {...hero} key={hero._id} />)}
+        </div>
+      </div>
+    </div>
   );
 };
 

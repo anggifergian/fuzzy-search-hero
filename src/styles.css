@@ -1,0 +1,62 @@
+/*====== Global ======*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/*====== Main ======*/
+.container {
+  margin: 20px auto;
+  padding: 50px 20px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*====== Title ======*/
+.title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/*====== Search ======*/
+.searchc {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .searchc {
+    max-width: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .searchc {
+    max-width: 400px;
+  }
+}
+
+/*====== Items ======*/
+.heroesc {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 600px) {
+  .heroesc {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .heroesc {
+    max-width: 80%;
+  }
+}
