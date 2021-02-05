@@ -1,0 +1,37 @@
+[
+    {
+        "_id": 1,
+        "name": "Aldous",
+        "roles": ["Mage", "Assasin"],
+        "specials": ["Burst", "Damage"],
+        "pic": ""
+    },
+    {
+        "_id": 2,
+        "name": "Alpha",
+        "roles": ["Fighter", "Assasin"],
+        "specials": ["Burst", "Damage"],
+        "pic": ""
+    },
+    {
+        "_id": 3,
+        "name": "Alucard",
+        "roles": ["Fighter", "Assasin"],
+        "specials": ["Burst", "Damage"],
+        "pic": ""
+    },
+    {
+        "_id": 4,
+        "name": "Argus",
+        "roles": ["Fighter", "Assasin"],
+        "specials": ["Burst", "Damage"],
+        "pic": ""
+    },
+    {
+        "_id": 5,
+        "name": "Badang",
+        "roles": ["Fighter", "Assasin"],
+        "specials": ["Burst", "Damage"],
+        "pic": ""
+    }
+]
